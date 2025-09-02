@@ -123,7 +123,8 @@ graph TD
     *   Run the database migrations to create the necessary tables:
         ```sh
         alembic upgrade head
-        ```4.  **Run the application:**
+        ```
+4.  **Run the application:**
     ```sh
     uvicorn main:app --host 0.0.0.0 --port 8000
     ```
