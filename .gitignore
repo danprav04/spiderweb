@@ -1,0 +1,13 @@
+
+llm_context.txt
+*.pyc
+venv
+*.db
+database.db
+__pycache__/
+app/__pycache__/
+*.db-journal
+.env
+*.pkl
+links_with_neighbors_cache.pkl
+app/__pycache__/database.cpython-310.pyc
