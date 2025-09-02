@@ -46,8 +46,8 @@ graph TD
     F[PostgreSQL DB];
 
     subgraph "Network & Data Connectors"
-        G[Paramiko (SSH)];
-        H[Trino Client (JDBC)];
+        G["Paramiko (SSH)"];
+        H["Trino Client (JDBC)"];
         I[Spectrum API Client];
     end
 
@@ -68,7 +68,7 @@ The following diagram illustrates Spiderweb's deployment infrastructure and its 
 
 ```mermaid
 graph TD
-    User([End User]) -->|HTTPS| Browser[Web Browser / Client];
+    User([End User]) -->|HTTPS| Browser["Web Browser / Client"];
     Browser -- API Calls --> AppServer[Spiderweb Application Server];
 
     subgraph "On-Premise Host"
@@ -76,7 +76,7 @@ graph TD
     end
 
     subgraph "Network Infrastructure"
-        Devices[Routers & Switches];
+        Devices["Routers & Switches"];
     end
 
     subgraph "Data & Management Platforms"
@@ -85,10 +85,10 @@ graph TD
         Spectrum[Spectrum Platform];
     end
 
-    AppServer -- SSH (Port 22) --> Devices;
+    AppServer -- "SSH (Port 22)" --> Devices;
     AppServer -- DB Connection --> Postgres;
-    AppServer -- HTTPS (Port 443) --> Trino;
-    AppServer -- REST API / SMB --> Spectrum;
+    AppServer -- "HTTPS (Port 443)" --> Trino;
+    AppServer -- "REST API / SMB" --> Spectrum;
 
     style User fill:#99aab5,stroke:#333,stroke-width:2px
     style AppServer fill:#7289da,stroke:#333,stroke-width:2px
@@ -123,8 +123,7 @@ graph TD
     *   Run the database migrations to create the necessary tables:
         ```sh
         alembic upgrade head
-        ```
-4.  **Run the application:**
+        ```4.  **Run the application:**
     ```sh
     uvicorn main:app --host 0.0.0.0 --port 8000
     ```
