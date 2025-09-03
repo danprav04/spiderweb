@@ -4,7 +4,7 @@
 
 Welcome to Spiderweb, a powerful and comprehensive network monitoring and management solution. Spiderweb is designed to provide real-time insights into your network's health, performance, and topology by actively crawling network devices and presenting the data through a clean, modern API.
 
-![Spiderweb Logo](https://storage.googleapis.com/spiderweb-prod/spiderweb-logo.png)
+<img width="200" height="200" alt="SpiderWeb_LOGO" src="https://github.com/user-attachments/assets/5ac76f1d-feac-42d0-b398-36d93482ed80" />
 
 ## Table of Contents
 
